@@ -82,6 +82,7 @@ public class LoginTest extends BasePage {
 		//System.out.println(username);
 		//String password=testdataMap.get("Password");
 		loginpage.Login(username, password);
+		//test
 		//loginpage.Login("mercury","mercury");
 		//String title = dashboardpage.getDashBoardPageTitle();
 		//Assert.assertEquals(title, "Find a Flight: Mercury Tours: ");
