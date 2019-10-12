@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="NewTour Application">
+<listeners>
+<listener class-name="listners.ExtentReportListner" />
+</listeners>
+
+	<parameter name="scenario" value="Login" />
+	<parameter name="sheet" value="Sheet2" />
+
+	<test name="LoginTest">
+		<classes>
+			<class name="stepDefinition.LoginTest" />
+			
+		</classes>
+	</test>
+</suite>
