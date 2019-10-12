@@ -1,29 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-10-12T16:08:24 CEST" name="NewTour Application" finished-at="2019-10-12T16:08:32 CEST" duration-ms="7528">
+  <suite started-at="2019-10-12T22:54:36 CEST" name="NewTour Application" finished-at="2019-10-12T22:54:57 CEST" duration-ms="21122">
     <groups>
     </groups>
-    <test started-at="2019-10-12T16:08:24 CEST" name="LoginTest" finished-at="2019-10-12T16:08:32 CEST" duration-ms="7528">
+    <test started-at="2019-10-12T22:54:36 CEST" name="LoginTest" finished-at="2019-10-12T22:54:57 CEST" duration-ms="21122">
+      <class name="stepDefinition.Reservation2Test">
+        <test-method signature="goToRegervation2Page()[pri:7, instance:stepDefinition.Reservation2Test@20b2475a]" started-at="2019-10-12T22:54:49 CEST" name="goToRegervation2Page" finished-at="2019-10-12T22:54:49 CEST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToRegervation2Page -->
+        <test-method signature="FlightesDetails()[pri:8, instance:stepDefinition.Reservation2Test@20b2475a]" started-at="2019-10-12T22:54:49 CEST" name="FlightesDetails" finished-at="2019-10-12T22:54:49 CEST" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlightesDetails -->
+        <test-method signature="Continue2()[pri:9, instance:stepDefinition.Reservation2Test@20b2475a]" started-at="2019-10-12T22:54:50 CEST" name="Continue2" finished-at="2019-10-12T22:54:51 CEST" duration-ms="1170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Continue2 -->
+      </class> <!-- stepDefinition.Reservation2Test -->
       <class name="stepDefinition.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:stepDefinition.LoginTest@50378a4]" started-at="2019-10-12T16:08:11 CEST" name="setUp" finished-at="2019-10-12T16:08:24 CEST" duration-ms="13601" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:stepDefinition.LoginTest@5db6b9cd]" started-at="2019-10-12T22:54:22 CEST" name="setUp" finished-at="2019-10-12T22:54:36 CEST" duration-ms="13237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="goToLoginPage()[pri:0, instance:stepDefinition.LoginTest@50378a4]" started-at="2019-10-12T16:08:24 CEST" name="goToLoginPage" finished-at="2019-10-12T16:08:24 CEST" duration-ms="34" status="PASS">
+        <test-method signature="goToLoginPage()[pri:0, instance:stepDefinition.LoginTest@5db6b9cd]" started-at="2019-10-12T22:54:36 CEST" name="goToLoginPage" finished-at="2019-10-12T22:54:36 CEST" duration-ms="69" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="verifyLoginPageTitle()[pri:1, instance:stepDefinition.LoginTest@50378a4]" started-at="2019-10-12T16:08:25 CEST" name="verifyLoginPageTitle" finished-at="2019-10-12T16:08:25 CEST" duration-ms="14" status="PASS">
+        <test-method signature="verifyLoginPageTitle()[pri:1, instance:stepDefinition.LoginTest@5db6b9cd]" started-at="2019-10-12T22:54:36 CEST" name="verifyLoginPageTitle" finished-at="2019-10-12T22:54:36 CEST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitle -->
-        <test-method signature="loginUser()[pri:2, instance:stepDefinition.LoginTest@50378a4]" started-at="2019-10-12T16:08:25 CEST" name="loginUser" finished-at="2019-10-12T16:08:31 CEST" duration-ms="6450" status="PASS">
+        <test-method signature="loginUser()[pri:2, instance:stepDefinition.LoginTest@5db6b9cd]" started-at="2019-10-12T22:54:37 CEST" name="loginUser" finished-at="2019-10-12T22:54:45 CEST" duration-ms="8507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginUser -->
       </class> <!-- stepDefinition.LoginTest -->
+      <class name="stepDefinition.ReservationTest">
+        <test-method signature="goToRegistrationPage()[pri:3, instance:stepDefinition.ReservationTest@210ab13f]" started-at="2019-10-12T22:54:45 CEST" name="goToRegistrationPage" finished-at="2019-10-12T22:54:45 CEST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToRegistrationPage -->
+        <test-method signature="selectFlightDetails()[pri:4, instance:stepDefinition.ReservationTest@210ab13f]" started-at="2019-10-12T22:54:46 CEST" name="selectFlightDetails" finished-at="2019-10-12T22:54:47 CEST" duration-ms="916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectFlightDetails -->
+        <test-method signature="selectPreferenceDetails()[pri:5, instance:stepDefinition.ReservationTest@210ab13f]" started-at="2019-10-12T22:54:47 CEST" name="selectPreferenceDetails" finished-at="2019-10-12T22:54:47 CEST" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectPreferenceDetails -->
+        <test-method signature="ClickContinue()[pri:6, instance:stepDefinition.ReservationTest@210ab13f]" started-at="2019-10-12T22:54:48 CEST" name="ClickContinue" finished-at="2019-10-12T22:54:48 CEST" duration-ms="812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickContinue -->
+      </class> <!-- stepDefinition.ReservationTest -->
+      <class name="stepDefinition.PurchasesTest">
+        <test-method signature="goToPurchasesPage()[pri:10, instance:stepDefinition.PurchasesTest@7857fe2]" started-at="2019-10-12T22:54:51 CEST" name="goToPurchasesPage" finished-at="2019-10-12T22:54:51 CEST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToPurchasesPage -->
+        <test-method signature="passengerDetail()[pri:11, instance:stepDefinition.PurchasesTest@7857fe2]" started-at="2019-10-12T22:54:52 CEST" name="passengerDetail" finished-at="2019-10-12T22:54:52 CEST" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passengerDetail -->
+        <test-method signature="creditCardDetail()[pri:12, instance:stepDefinition.PurchasesTest@7857fe2]" started-at="2019-10-12T22:54:52 CEST" name="creditCardDetail" finished-at="2019-10-12T22:54:53 CEST" duration-ms="853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creditCardDetail -->
+        <test-method signature="billingAddress()[pri:13, instance:stepDefinition.PurchasesTest@7857fe2]" started-at="2019-10-12T22:54:53 CEST" name="billingAddress" finished-at="2019-10-12T22:54:54 CEST" duration-ms="591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- billingAddress -->
+        <test-method signature="deliveryAddress()[pri:14, instance:stepDefinition.PurchasesTest@7857fe2]" started-at="2019-10-12T22:54:54 CEST" name="deliveryAddress" finished-at="2019-10-12T22:54:55 CEST" duration-ms="589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deliveryAddress -->
+        <test-method signature="secureButton()[pri:15, instance:stepDefinition.PurchasesTest@7857fe2]" started-at="2019-10-12T22:54:55 CEST" name="secureButton" finished-at="2019-10-12T22:54:56 CEST" duration-ms="896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secureButton -->
+      </class> <!-- stepDefinition.PurchasesTest -->
     </test> <!-- LoginTest -->
   </suite> <!-- NewTour Application -->
 </testng-results>

@@ -10,7 +10,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Base.BasePage;
-import Pages.DashboardPage;
+import Pages.ReservationPage;
 import Pages.LoginPage;
 import utils.ExcelUtil;
 
@@ -19,7 +19,7 @@ public class LoginTest extends BasePage {
 	public LoginPage loginpage;
 	private Properties prop;
 	public WebDriver driver;
-	public DashboardPage dashboardpage;
+	public ReservationPage reservation;
 	public String username;
 	public String password;
 
@@ -82,12 +82,14 @@ public class LoginTest extends BasePage {
 		//System.out.println(username);
 		//String password=testdataMap.get("Password");
 		loginpage.Login(username, password);
-		//test
-		//loginpage.Login("mercury","mercury");
-		//String title = dashboardpage.getDashBoardPageTitle();
-		//Assert.assertEquals(title, "Find a Flight: Mercury Tours: ");
+		reservation = new ReservationPage(driver);
+		String title = reservation.getReservationPageTitle();
+		System.out.println("hello" + title);
+		Assert.assertEquals(title, "Find a Flight: Mercury Tours:");
 		
 	}
+	
+	
 	
 	
 	
