@@ -10,22 +10,22 @@ public class ReservationTest extends BasePage {
 
 	public ReservationPage reservationPage;
 	
-	@Test(priority = 3)
+	@Test(priority = 8)
 	public void goToRegistrationPage() {
 		reservationPage=new ReservationPage(getDriver());
 	}
 	
-	@Test(priority = 4)
+	@Test(priority = 9)
 	public void selectFlightDetails() {
 		reservationPage.EnterFlightDetails("1", "London", "January", "10", "Portland", "August", "15");
 	}
 	
-	@Test(priority = 5)
+	@Test(priority = 10)
 	public void selectPreferenceDetails() {
 		reservationPage.EnterPreferenceDetails("Unified Airlines");
 	}
 	
-	@Test(priority = 6)
+	@Test(priority = 11)
 	public void ClickContinue() {
 		reservationPage.ClickOnContinueButton();
 	}

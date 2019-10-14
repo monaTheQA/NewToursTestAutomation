@@ -23,6 +23,14 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath="//input[@name='login']")
 	private WebElement LoginBtn;
 	
+	@FindBy(xpath="//[text()='REGISTER']")
+	private WebElement RegisterLink;
+	
+	@FindBy(xpath="//a[text()='Home']")
+	private WebElement HOMELink;
+	
+	
+	
 	
 	
 	
@@ -47,6 +55,14 @@ public class LoginPage extends BasePage {
 		LoginBtn.click();
 		
 		//return new DashBoardPage();
+	}
+	
+	public void ClickOnRegisterLink() {
+		RegisterLink.click();
+	}
+	
+	public void gotoHomePage() {
+		HOMELink.click();
 	}
 	
 	

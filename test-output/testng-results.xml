@@ -1,86 +1,194 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
+<testng-results ignored="0" total="22" passed="20" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-10-12T22:54:36 CEST" name="NewTour Application" finished-at="2019-10-12T22:54:57 CEST" duration-ms="21122">
+  <suite started-at="2019-10-14T19:54:14 CEST" name="NewTour Application" finished-at="2019-10-14T19:54:39 CEST" duration-ms="24985">
     <groups>
     </groups>
-    <test started-at="2019-10-12T22:54:36 CEST" name="LoginTest" finished-at="2019-10-12T22:54:57 CEST" duration-ms="21122">
+    <test started-at="2019-10-14T19:54:14 CEST" name="LoginTest" finished-at="2019-10-14T19:54:39 CEST" duration-ms="24985">
+      <class name="stepDefinition.RegistrationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:stepDefinition.RegistrationTest@29d80d2b]" started-at="2019-10-14T19:54:00 CEST" name="setUp" finished-at="2019-10-14T19:54:14 CEST" duration-ms="13685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomepageTitle()[pri:0, instance:stepDefinition.RegistrationTest@29d80d2b]" started-at="2019-10-14T19:54:14 CEST" name="verifyHomepageTitle" finished-at="2019-10-14T19:54:14 CEST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomepageTitle -->
+        <test-method signature="registerUser()[pri:1, instance:stepDefinition.RegistrationTest@29d80d2b]" started-at="2019-10-14T19:54:14 CEST" name="registerUser" finished-at="2019-10-14T19:54:15 CEST" duration-ms="785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUser -->
+        <test-method signature="verifyregiserpageTitle()[pri:2, instance:stepDefinition.RegistrationTest@29d80d2b]" started-at="2019-10-14T19:54:15 CEST" name="verifyregiserpageTitle" finished-at="2019-10-14T19:54:15 CEST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyregiserpageTitle -->
+        <test-method signature="EnterUSerDetails()[pri:3, instance:stepDefinition.RegistrationTest@29d80d2b]" started-at="2019-10-14T19:54:16 CEST" name="EnterUSerDetails" finished-at="2019-10-14T19:54:18 CEST" duration-ms="2289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnterUSerDetails -->
+      </class> <!-- stepDefinition.RegistrationTest -->
       <class name="stepDefinition.Reservation2Test">
-        <test-method signature="goToRegervation2Page()[pri:7, instance:stepDefinition.Reservation2Test@20b2475a]" started-at="2019-10-12T22:54:49 CEST" name="goToRegervation2Page" finished-at="2019-10-12T22:54:49 CEST" duration-ms="4" status="PASS">
+        <test-method signature="goToRegervation2Page()[pri:12, instance:stepDefinition.Reservation2Test@4f0f2942]" started-at="2019-10-14T19:54:30 CEST" name="goToRegervation2Page" finished-at="2019-10-14T19:54:30 CEST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToRegervation2Page -->
-        <test-method signature="FlightesDetails()[pri:8, instance:stepDefinition.Reservation2Test@20b2475a]" started-at="2019-10-12T22:54:49 CEST" name="FlightesDetails" finished-at="2019-10-12T22:54:49 CEST" duration-ms="51" status="PASS">
+        <test-method signature="FlightesDetails()[pri:13, instance:stepDefinition.Reservation2Test@4f0f2942]" started-at="2019-10-14T19:54:31 CEST" name="FlightesDetails" finished-at="2019-10-14T19:54:31 CEST" duration-ms="68" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FlightesDetails -->
-        <test-method signature="Continue2()[pri:9, instance:stepDefinition.Reservation2Test@20b2475a]" started-at="2019-10-12T22:54:50 CEST" name="Continue2" finished-at="2019-10-12T22:54:51 CEST" duration-ms="1170" status="PASS">
+        <test-method signature="Continue2()[pri:14, instance:stepDefinition.Reservation2Test@4f0f2942]" started-at="2019-10-14T19:54:31 CEST" name="Continue2" finished-at="2019-10-14T19:54:33 CEST" duration-ms="2166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Continue2 -->
       </class> <!-- stepDefinition.Reservation2Test -->
       <class name="stepDefinition.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:stepDefinition.LoginTest@5db6b9cd]" started-at="2019-10-12T22:54:22 CEST" name="setUp" finished-at="2019-10-12T22:54:36 CEST" duration-ms="13237" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="goToLoginPage()[pri:0, instance:stepDefinition.LoginTest@5db6b9cd]" started-at="2019-10-12T22:54:36 CEST" name="goToLoginPage" finished-at="2019-10-12T22:54:36 CEST" duration-ms="69" status="PASS">
+        <test-method signature="goToLoginPage()[pri:4, instance:stepDefinition.LoginTest@58e1d9d]" started-at="2019-10-14T19:54:18 CEST" name="goToLoginPage" finished-at="2019-10-14T19:54:18 CEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="verifyLoginPageTitle()[pri:1, instance:stepDefinition.LoginTest@5db6b9cd]" started-at="2019-10-12T22:54:36 CEST" name="verifyLoginPageTitle" finished-at="2019-10-12T22:54:36 CEST" duration-ms="21" status="PASS">
+        <test-method signature="verifyLoginPageTitle()[pri:5, instance:stepDefinition.LoginTest@58e1d9d]" started-at="2019-10-14T19:54:19 CEST" name="verifyLoginPageTitle" finished-at="2019-10-14T19:54:19 CEST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Welcome: Mercury Tours] but found [Register: Mercury Tours]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Welcome: Mercury Tours] but found [Register: Mercury Tours]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at stepDefinition.LoginTest.verifyLoginPageTitle(LoginTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitle -->
-        <test-method signature="loginUser()[pri:2, instance:stepDefinition.LoginTest@5db6b9cd]" started-at="2019-10-12T22:54:37 CEST" name="loginUser" finished-at="2019-10-12T22:54:45 CEST" duration-ms="8507" status="PASS">
+        <test-method signature="gotTohomepage()[pri:6, instance:stepDefinition.LoginTest@58e1d9d]" started-at="2019-10-14T19:54:19 CEST" name="gotTohomepage" finished-at="2019-10-14T19:54:20 CEST" duration-ms="793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotTohomepage -->
+        <test-method signature="loginUser()[pri:7, instance:stepDefinition.LoginTest@58e1d9d]" started-at="2019-10-14T19:54:20 CEST" name="loginUser" finished-at="2019-10-14T19:54:26 CEST" duration-ms="6148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginUser -->
       </class> <!-- stepDefinition.LoginTest -->
       <class name="stepDefinition.ReservationTest">
-        <test-method signature="goToRegistrationPage()[pri:3, instance:stepDefinition.ReservationTest@210ab13f]" started-at="2019-10-12T22:54:45 CEST" name="goToRegistrationPage" finished-at="2019-10-12T22:54:45 CEST" duration-ms="4" status="PASS">
+        <test-method signature="goToRegistrationPage()[pri:8, instance:stepDefinition.ReservationTest@446a1e84]" started-at="2019-10-14T19:54:27 CEST" name="goToRegistrationPage" finished-at="2019-10-14T19:54:27 CEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToRegistrationPage -->
-        <test-method signature="selectFlightDetails()[pri:4, instance:stepDefinition.ReservationTest@210ab13f]" started-at="2019-10-12T22:54:46 CEST" name="selectFlightDetails" finished-at="2019-10-12T22:54:47 CEST" duration-ms="916" status="PASS">
+        <test-method signature="selectFlightDetails()[pri:9, instance:stepDefinition.ReservationTest@446a1e84]" started-at="2019-10-14T19:54:27 CEST" name="selectFlightDetails" finished-at="2019-10-14T19:54:28 CEST" duration-ms="795" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectFlightDetails -->
-        <test-method signature="selectPreferenceDetails()[pri:5, instance:stepDefinition.ReservationTest@210ab13f]" started-at="2019-10-12T22:54:47 CEST" name="selectPreferenceDetails" finished-at="2019-10-12T22:54:47 CEST" duration-ms="192" status="PASS">
+        <test-method signature="selectPreferenceDetails()[pri:10, instance:stepDefinition.ReservationTest@446a1e84]" started-at="2019-10-14T19:54:28 CEST" name="selectPreferenceDetails" finished-at="2019-10-14T19:54:28 CEST" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectPreferenceDetails -->
-        <test-method signature="ClickContinue()[pri:6, instance:stepDefinition.ReservationTest@210ab13f]" started-at="2019-10-12T22:54:48 CEST" name="ClickContinue" finished-at="2019-10-12T22:54:48 CEST" duration-ms="812" status="PASS">
+        <test-method signature="ClickContinue()[pri:11, instance:stepDefinition.ReservationTest@446a1e84]" started-at="2019-10-14T19:54:29 CEST" name="ClickContinue" finished-at="2019-10-14T19:54:30 CEST" duration-ms="1114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickContinue -->
       </class> <!-- stepDefinition.ReservationTest -->
       <class name="stepDefinition.PurchasesTest">
-        <test-method signature="goToPurchasesPage()[pri:10, instance:stepDefinition.PurchasesTest@7857fe2]" started-at="2019-10-12T22:54:51 CEST" name="goToPurchasesPage" finished-at="2019-10-12T22:54:51 CEST" duration-ms="4" status="PASS">
+        <test-method signature="goToPurchasesPage()[pri:15, instance:stepDefinition.PurchasesTest@2657d4dd]" started-at="2019-10-14T19:54:34 CEST" name="goToPurchasesPage" finished-at="2019-10-14T19:54:34 CEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToPurchasesPage -->
-        <test-method signature="passengerDetail()[pri:11, instance:stepDefinition.PurchasesTest@7857fe2]" started-at="2019-10-12T22:54:52 CEST" name="passengerDetail" finished-at="2019-10-12T22:54:52 CEST" duration-ms="310" status="PASS">
+        <test-method signature="passengerDetail()[pri:16, instance:stepDefinition.PurchasesTest@2657d4dd]" started-at="2019-10-14T19:54:34 CEST" name="passengerDetail" finished-at="2019-10-14T19:54:34 CEST" duration-ms="302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passengerDetail -->
-        <test-method signature="creditCardDetail()[pri:12, instance:stepDefinition.PurchasesTest@7857fe2]" started-at="2019-10-12T22:54:52 CEST" name="creditCardDetail" finished-at="2019-10-12T22:54:53 CEST" duration-ms="853" status="PASS">
+        <test-method signature="creditCardDetail()[pri:17, instance:stepDefinition.PurchasesTest@2657d4dd]" started-at="2019-10-14T19:54:34 CEST" name="creditCardDetail" finished-at="2019-10-14T19:54:35 CEST" duration-ms="757" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- creditCardDetail -->
-        <test-method signature="billingAddress()[pri:13, instance:stepDefinition.PurchasesTest@7857fe2]" started-at="2019-10-12T22:54:53 CEST" name="billingAddress" finished-at="2019-10-12T22:54:54 CEST" duration-ms="591" status="PASS">
+        <test-method signature="billingAddress()[pri:18, instance:stepDefinition.PurchasesTest@2657d4dd]" started-at="2019-10-14T19:54:36 CEST" name="billingAddress" finished-at="2019-10-14T19:54:36 CEST" duration-ms="497" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- billingAddress -->
-        <test-method signature="deliveryAddress()[pri:14, instance:stepDefinition.PurchasesTest@7857fe2]" started-at="2019-10-12T22:54:54 CEST" name="deliveryAddress" finished-at="2019-10-12T22:54:55 CEST" duration-ms="589" status="PASS">
+        <test-method signature="deliveryAddress()[pri:19, instance:stepDefinition.PurchasesTest@2657d4dd]" started-at="2019-10-14T19:54:36 CEST" name="deliveryAddress" finished-at="2019-10-14T19:54:37 CEST" duration-ms="419" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deliveryAddress -->
-        <test-method signature="secureButton()[pri:15, instance:stepDefinition.PurchasesTest@7857fe2]" started-at="2019-10-12T22:54:55 CEST" name="secureButton" finished-at="2019-10-12T22:54:56 CEST" duration-ms="896" status="PASS">
+        <test-method signature="secureButton()[pri:20, instance:stepDefinition.PurchasesTest@2657d4dd]" started-at="2019-10-14T19:54:37 CEST" name="secureButton" finished-at="2019-10-14T19:54:38 CEST" duration-ms="828" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- secureButton -->
+        <test-method signature="gotTohomepage()[pri:21, instance:stepDefinition.PurchasesTest@2657d4dd]" started-at="2019-10-14T19:54:38 CEST" name="gotTohomepage" finished-at="2019-10-14T19:54:38 CEST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy12.click(Unknown Source)
+at Pages.LoginPage.gotoHomePage(LoginPage.java:65)
+at stepDefinition.PurchasesTest.gotTohomepage(PurchasesTest.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotTohomepage -->
       </class> <!-- stepDefinition.PurchasesTest -->
     </test> <!-- LoginTest -->
   </suite> <!-- NewTour Application -->

@@ -10,17 +10,17 @@ public class Reservation2Test extends BasePage{
 
 	public Reservation2Page reservation2Page;
 	
-	@Test(priority = 7)
+	@Test(priority = 12)
 	public void goToRegervation2Page() {
 		reservation2Page = new Reservation2Page(getDriver());
 	}
 	
-	@Test(priority = 8)
+	@Test(priority = 13)
 	public void FlightesDetails() {
 		reservation2Page.selectFlight();
 		
 	}
-	@Test(priority = 9)
+	@Test(priority = 14)
 	public void Continue2() {
 		reservation2Page.ClickContinueButton();
 	}

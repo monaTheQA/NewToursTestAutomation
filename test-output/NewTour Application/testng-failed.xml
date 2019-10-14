@@ -8,11 +8,16 @@
   </listeners>
   <test thread-count="5" name="LoginTest(failed)">
     <classes>
-      <class name="stepDefinition.ReservationTest">
+      <class name="stepDefinition.PurchasesTest">
         <methods>
-          <include name="selectFlightDetails"/>
+          <include name="gotTohomepage"/>
         </methods>
-      </class> <!-- stepDefinition.ReservationTest -->
+      </class> <!-- stepDefinition.PurchasesTest -->
+      <class name="stepDefinition.LoginTest">
+        <methods>
+          <include name="verifyLoginPageTitle"/>
+        </methods>
+      </class> <!-- stepDefinition.LoginTest -->
     </classes>
   </test> <!-- LoginTest(failed) -->
 </suite> <!-- Failed suite [NewTour Application] -->

@@ -12,6 +12,7 @@
 
 	<test name="LoginTest">
 		<classes>
+		<class name="stepDefinition.RegistrationTest" />
 			<class name="stepDefinition.LoginTest" />
 			<class name="stepDefinition.ReservationTest" />
 			<class name="stepDefinition.Reservation2Test" />

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-NewTour_Application" class="navigator-link">
-              <span class="suite-name border-passed">NewTour Application</span>
+              <span class="suite-name border-failed">NewTour Application</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">16 methods,   16 passed</span>
+                    <span class="method-stats">22 methods, 2 failed,   20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-NewTour_Application" class="hide-methods failed suite-NewTour_Application"> (hide)</a> <!-- hide-methods failed suite-NewTour_Application -->
+                      <a href="#" panel-name="suite-NewTour_Application" class="show-methods failed suite-NewTour_Application"> (show)</a> <!-- show-methods failed suite-NewTour_Application -->
+                    </span>
+                    <div class="method-list-content failed suite-NewTour_Application">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NewTour_Application" title="stepDefinition.PurchasesTest" class="method navigator-link" hash-for-method="gotTohomepage">gotTohomepage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NewTour_Application" title="stepDefinition.LoginTest" class="method navigator-link" hash-for-method="verifyLoginPageTitle">verifyLoginPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-NewTour_Application -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,6 +127,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-NewTour_Application" title="stepDefinition.Reservation2Test" class="method navigator-link" hash-for-method="Continue2">Continue2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NewTour_Application" title="stepDefinition.RegistrationTest" class="method navigator-link" hash-for-method="EnterUSerDetails">EnterUSerDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -152,12 +176,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NewTour_Application" title="stepDefinition.LoginTest" class="method navigator-link" hash-for-method="gotTohomepage">gotTohomepage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-NewTour_Application" title="stepDefinition.LoginTest" class="method navigator-link" hash-for-method="loginUser">loginUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-NewTour_Application" title="stepDefinition.PurchasesTest" class="method navigator-link" hash-for-method="passengerDetail">passengerDetail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NewTour_Application" title="stepDefinition.RegistrationTest" class="method navigator-link" hash-for-method="registerUser">registerUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -177,7 +211,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NewTour_Application" title="stepDefinition.LoginTest" class="method navigator-link" hash-for-method="verifyLoginPageTitle">verifyLoginPageTitle</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-NewTour_Application" title="stepDefinition.RegistrationTest" class="method navigator-link" hash-for-method="verifyHomepageTitle">verifyHomepageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NewTour_Application" title="stepDefinition.RegistrationTest" class="method navigator-link" hash-for-method="verifyregiserpageTitle">verifyregiserpageTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-NewTour_Application -->
@@ -192,31 +231,118 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-NewTour_Application" class="panel NewTour_Application">
-          <div class="suite-NewTour_Application-class-passed">
+          <div class="suite-NewTour_Application-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">stepDefinition.PurchasesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="gotTohomepage">
+                  </a> <!-- gotTohomepage -->
+                  <span class="method-name">gotTohomepage</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at Pages.LoginPage.gotoHomePage(LoginPage.java:65)
+	at stepDefinition.PurchasesTest.gotTohomepage(PurchasesTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NewTour_Application-class-failed -->
+          <div class="suite-NewTour_Application-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">stepDefinition.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="goToLoginPage">
-                  </a> <!-- goToLoginPage -->
-                  <span class="method-name">goToLoginPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginUser">
-                  </a> <!-- loginUser -->
-                  <span class="method-name">loginUser</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verifyLoginPageTitle">
                   </a> <!-- verifyLoginPageTitle -->
                   <span class="method-name">verifyLoginPageTitle</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Welcome: Mercury Tours] but found [Register: Mercury Tours]
+	at stepDefinition.LoginTest.verifyLoginPageTitle(LoginTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NewTour_Application-class-failed -->
+          <div class="suite-NewTour_Application-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">stepDefinition.RegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="EnterUSerDetails">
+                  </a> <!-- EnterUSerDetails -->
+                  <span class="method-name">EnterUSerDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerUser">
+                  </a> <!-- registerUser -->
+                  <span class="method-name">registerUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomepageTitle">
+                  </a> <!-- verifyHomepageTitle -->
+                  <span class="method-name">verifyHomepageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyregiserpageTitle">
+                  </a> <!-- verifyregiserpageTitle -->
+                  <span class="method-name">verifyregiserpageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NewTour_Application-class-passed -->
+          <div class="suite-NewTour_Application-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">stepDefinition.ReservationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClickContinue">
+                  </a> <!-- ClickContinue -->
+                  <span class="method-name">ClickContinue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToRegistrationPage">
+                  </a> <!-- goToRegistrationPage -->
+                  <span class="method-name">goToRegistrationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectFlightDetails">
+                  </a> <!-- selectFlightDetails -->
+                  <span class="method-name">selectFlightDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectPreferenceDetails">
+                  </a> <!-- selectPreferenceDetails -->
+                  <span class="method-name">selectPreferenceDetails</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -303,35 +429,28 @@
           <div class="suite-NewTour_Application-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">stepDefinition.ReservationTest</span>
+              <span class="class-name">stepDefinition.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ClickContinue">
-                  </a> <!-- ClickContinue -->
-                  <span class="method-name">ClickContinue</span>
+                  <a name="goToLoginPage">
+                  </a> <!-- goToLoginPage -->
+                  <span class="method-name">goToLoginPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="goToRegistrationPage">
-                  </a> <!-- goToRegistrationPage -->
-                  <span class="method-name">goToRegistrationPage</span>
+                  <a name="gotTohomepage">
+                  </a> <!-- gotTohomepage -->
+                  <span class="method-name">gotTohomepage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="selectFlightDetails">
-                  </a> <!-- selectFlightDetails -->
-                  <span class="method-name">selectFlightDetails</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectPreferenceDetails">
-                  </a> <!-- selectPreferenceDetails -->
-                  <span class="method-name">selectPreferenceDetails</span>
+                  <a name="loginUser">
+                  </a> <!-- loginUser -->
+                  <span class="method-name">loginUser</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -353,6 +472,7 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;LoginTest&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;stepDefinition.RegistrationTest&quot;/&gt;
       &lt;class name=&quot;stepDefinition.LoginTest&quot;/&gt;
       &lt;class name=&quot;stepDefinition.ReservationTest&quot;/&gt;
       &lt;class name=&quot;stepDefinition.Reservation2Test&quot;/&gt;
@@ -370,7 +490,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">LoginTest (4 classes)</span>
+                <span class="test-name">LoginTest (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -396,76 +516,100 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(16);
+data.addRows(22);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginUser')
 data.setCell(0, 2, 'stepDefinition.LoginTest')
-data.setCell(0, 3, 8507);
+data.setCell(0, 3, 6148);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Continue2')
-data.setCell(1, 2, 'stepDefinition.Reservation2Test')
-data.setCell(1, 3, 1170);
+data.setCell(1, 1, 'EnterUSerDetails')
+data.setCell(1, 2, 'stepDefinition.RegistrationTest')
+data.setCell(1, 3, 2289);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'selectFlightDetails')
-data.setCell(2, 2, 'stepDefinition.ReservationTest')
-data.setCell(2, 3, 916);
+data.setCell(2, 1, 'Continue2')
+data.setCell(2, 2, 'stepDefinition.Reservation2Test')
+data.setCell(2, 3, 2166);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'secureButton')
-data.setCell(3, 2, 'stepDefinition.PurchasesTest')
-data.setCell(3, 3, 896);
+data.setCell(3, 1, 'ClickContinue')
+data.setCell(3, 2, 'stepDefinition.ReservationTest')
+data.setCell(3, 3, 1114);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'creditCardDetail')
+data.setCell(4, 1, 'secureButton')
 data.setCell(4, 2, 'stepDefinition.PurchasesTest')
-data.setCell(4, 3, 853);
+data.setCell(4, 3, 828);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'ClickContinue')
+data.setCell(5, 1, 'selectFlightDetails')
 data.setCell(5, 2, 'stepDefinition.ReservationTest')
-data.setCell(5, 3, 812);
+data.setCell(5, 3, 795);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'billingAddress')
-data.setCell(6, 2, 'stepDefinition.PurchasesTest')
-data.setCell(6, 3, 591);
+data.setCell(6, 1, 'gotTohomepage')
+data.setCell(6, 2, 'stepDefinition.LoginTest')
+data.setCell(6, 3, 793);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'deliveryAddress')
-data.setCell(7, 2, 'stepDefinition.PurchasesTest')
-data.setCell(7, 3, 589);
+data.setCell(7, 1, 'registerUser')
+data.setCell(7, 2, 'stepDefinition.RegistrationTest')
+data.setCell(7, 3, 785);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'passengerDetail')
+data.setCell(8, 1, 'creditCardDetail')
 data.setCell(8, 2, 'stepDefinition.PurchasesTest')
-data.setCell(8, 3, 310);
+data.setCell(8, 3, 757);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'selectPreferenceDetails')
-data.setCell(9, 2, 'stepDefinition.ReservationTest')
-data.setCell(9, 3, 192);
+data.setCell(9, 1, 'billingAddress')
+data.setCell(9, 2, 'stepDefinition.PurchasesTest')
+data.setCell(9, 3, 497);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'goToLoginPage')
-data.setCell(10, 2, 'stepDefinition.LoginTest')
-data.setCell(10, 3, 69);
+data.setCell(10, 1, 'deliveryAddress')
+data.setCell(10, 2, 'stepDefinition.PurchasesTest')
+data.setCell(10, 3, 419);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'FlightesDetails')
-data.setCell(11, 2, 'stepDefinition.Reservation2Test')
-data.setCell(11, 3, 51);
+data.setCell(11, 1, 'passengerDetail')
+data.setCell(11, 2, 'stepDefinition.PurchasesTest')
+data.setCell(11, 3, 302);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verifyLoginPageTitle')
-data.setCell(12, 2, 'stepDefinition.LoginTest')
-data.setCell(12, 3, 21);
+data.setCell(12, 1, 'selectPreferenceDetails')
+data.setCell(12, 2, 'stepDefinition.ReservationTest')
+data.setCell(12, 3, 158);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'goToRegervation2Page')
+data.setCell(13, 1, 'FlightesDetails')
 data.setCell(13, 2, 'stepDefinition.Reservation2Test')
-data.setCell(13, 3, 4);
+data.setCell(13, 3, 68);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'goToPurchasesPage')
-data.setCell(14, 2, 'stepDefinition.PurchasesTest')
-data.setCell(14, 3, 4);
+data.setCell(14, 1, 'verifyHomepageTitle')
+data.setCell(14, 2, 'stepDefinition.RegistrationTest')
+data.setCell(14, 3, 31);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'goToRegistrationPage')
-data.setCell(15, 2, 'stepDefinition.ReservationTest')
-data.setCell(15, 3, 4);
+data.setCell(15, 1, 'goToRegervation2Page')
+data.setCell(15, 2, 'stepDefinition.Reservation2Test')
+data.setCell(15, 3, 15);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyregiserpageTitle')
+data.setCell(16, 2, 'stepDefinition.RegistrationTest')
+data.setCell(16, 3, 7);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'gotTohomepage')
+data.setCell(17, 2, 'stepDefinition.PurchasesTest')
+data.setCell(17, 3, 2);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'goToPurchasesPage')
+data.setCell(18, 2, 'stepDefinition.PurchasesTest')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'goToLoginPage')
+data.setCell(19, 2, 'stepDefinition.LoginTest')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'goToRegistrationPage')
+data.setCell(20, 2, 'stepDefinition.ReservationTest')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyLoginPageTitle')
+data.setCell(21, 2, 'stepDefinition.LoginTest')
+data.setCell(21, 3, 0);
 window.suiteTableData['NewTour_Application']= { tableData: data, tableDiv: 'times-div-NewTour_Application'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-NewTour_Application">
               </div> <!-- times-div-NewTour_Application -->
             </div> <!-- times-div -->
@@ -491,83 +635,114 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">stepDefinition.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">stepDefinition.RegistrationTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">goToLoginPage</span>
-                <span class="method-start">13322 ms</span>
+                <span class="method-name">verifyHomepageTitle</span>
+                <span class="method-start">13705 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">registerUser</span>
+                <span class="method-start">14135 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyregiserpageTitle</span>
+                <span class="method-start">15223 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">EnterUSerDetails</span>
+                <span class="method-start">15594 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">stepDefinition.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">goToLoginPage</span>
+                <span class="method-start">18249 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyLoginPageTitle</span>
-                <span class="method-start">13840 ms</span>
+                <span class="method-start">18650 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">gotTohomepage</span>
+                <span class="method-start">19004 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginUser</span>
-                <span class="method-start">14209 ms</span>
+                <span class="method-start">20193 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">stepDefinition.ReservationTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">goToRegistrationPage</span>
-                <span class="method-start">23024 ms</span>
+                <span class="method-start">26689 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectFlightDetails</span>
-                <span class="method-start">23385 ms</span>
+                <span class="method-start">27028 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectPreferenceDetails</span>
-                <span class="method-start">24682 ms</span>
+                <span class="method-start">28179 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickContinue</span>
-                <span class="method-start">25257 ms</span>
+                <span class="method-start">28697 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">stepDefinition.Reservation2Test</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">goToRegervation2Page</span>
-                <span class="method-start">26422 ms</span>
+                <span class="method-start">30177 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">FlightesDetails</span>
-                <span class="method-start">26810 ms</span>
+                <span class="method-start">30527 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Continue2</span>
-                <span class="method-start">27247 ms</span>
+                <span class="method-start">30911 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">stepDefinition.PurchasesTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">goToPurchasesPage</span>
-                <span class="method-start">28835 ms</span>
+                <span class="method-start">33434 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">passengerDetail</span>
-                <span class="method-start">29186 ms</span>
+                <span class="method-start">33758 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">creditCardDetail</span>
-                <span class="method-start">29864 ms</span>
+                <span class="method-start">34375 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">billingAddress</span>
-                <span class="method-start">31148 ms</span>
+                <span class="method-start">35462 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deliveryAddress</span>
-                <span class="method-start">32090 ms</span>
+                <span class="method-start">36310 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">secureButton</span>
-                <span class="method-start">33064 ms</span>
+                <span class="method-start">37062 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">gotTohomepage</span>
+                <span class="method-start">38279 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
